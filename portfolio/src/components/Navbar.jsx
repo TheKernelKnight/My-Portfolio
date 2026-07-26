@@ -40,12 +40,12 @@ export default function Navbar() {
     >
       <nav
         aria-label="Primary"
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-10 lg:px-8"
+        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:px-8"
       >
         <a
           href="#hero"
           onClick={(e) => handleNavClick(e, 'hero')}
-          className="text-sm font-semibold tracking-tight text-white"
+          className="text-lg font-semibold tracking-tight text-white"
         >
           TheKernelKnight<span className="text-primary">.</span>
         </a>

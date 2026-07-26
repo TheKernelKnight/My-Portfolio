@@ -88,3 +88,32 @@ export function IconBlueprint({ className }) {
     </svg>
   )
 }
+
+export function IconCode({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base}>
+      <path d="M8.5 7.5 3.5 12L8.5 16.5" />
+      <path d="M15.5 7.5 20.5 12L15.5 16.5" />
+      <path d="M13.2 5.5 10.8 18.5" opacity="0.6" />
+    </svg>
+  )
+}
+
+export function IconAperture({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base}>
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5.5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="16.3" cy="7.7" r="0.9" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
+export function IconSignal({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base}>
+      <path d="M5 5L19 19" />
+      <path d="M5 19L19 5" opacity="0.6" />
+    </svg>
+  )
+}
