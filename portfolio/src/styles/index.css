@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #05060a;
+  --color-card: #0e1017;
+  --color-primary: #6c63ff;
+  --color-secondary: #4f8bff;
+  --color-text: #ffffff;
+  --color-text-secondary: #a0a7b4;
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgba(108, 99, 255, 0.35);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 40px 0 rgba(108, 99, 255, 0.35);
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 40px 0 rgba(79, 139, 255, 0.3);
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, #6c63ff, #4f8bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
