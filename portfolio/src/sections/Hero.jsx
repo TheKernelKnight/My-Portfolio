@@ -93,22 +93,22 @@ export default function Hero() {
 
         <div
           aria-hidden="true"
-          className="relative hidden h-[420px] md:block"
+          className="relative hidden h-[460px] md:block"
         >
           <Blob
-            size={380}
+            size={460}
             color="primary"
             parallax={parallax}
-            parallaxStrength={26}
-            floatDuration={11}
+            parallaxStrength={40}
+            floatDuration={7}
             className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
           />
           <Blob
-            size={260}
+            size={320}
             color="secondary"
             parallax={parallax}
-            parallaxStrength={-18}
-            floatDuration={14}
+            parallaxStrength={-28}
+            floatDuration={9}
             className="left-1/2 top-1/2 -translate-x-[20%] -translate-y-[60%]"
           />
         </div>
