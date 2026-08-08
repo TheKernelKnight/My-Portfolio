@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g1" cx="30%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#6C63FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#05060A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#0E1017"/>
+  <rect width="1200" height="800" fill="url(#g1)"/>
+  <rect x="0.5" y="0.5" width="1199" height="799" fill="none" stroke="rgba(255,255,255,0.08)"/>
+  <g fill="#A0A7B4" font-family="monospace" text-anchor="middle">
+    <text x="600" y="380" font-size="28" fill="#FFFFFF">thumbnails/1/thumbnail.jpg</text>
+    <text x="600" y="420" font-size="18">Replace this file with a BookMe screenshot</text>
+    <text x="600" y="450" font-size="18">Recommended size: 1200x800</text>
+  </g>
+</svg>

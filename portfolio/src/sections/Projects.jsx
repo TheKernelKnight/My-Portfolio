@@ -9,6 +9,28 @@ const PROJECTS = [
       'An appointment booking platform for small businesses, barbershops, clinics, gyms, driving schools, and tutors, with client accounts, a business dashboard, and local payment support.',
     tags: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Chargily'],
     href: 'https://bookeer.vercel.app',
+    thumbnail: {
+      src: '/thumbnails/1/BookMe1.png',
+      alt: 'BookMe product thumbnail',
+    },
+    caseStudy: {
+      challenge: {
+        title: 'Getting Chargily payments to actually be trustworthy',
+        body: 'Stripe and PayPal don\u2019t support Algerian merchants, so local card payments (CIB, EDAHABIA) meant integrating Chargily \u2014 by far the hardest part of BookMe. The tricky bit wasn\u2019t the checkout call, it was everything after it: payment confirmation comes back asynchronously through a webhook, not the client redirect, so I couldn\u2019t trust "the user landed on the success page" as proof of payment. I had to verify Chargily\u2019s webhook signature server-side, handle out-of-order or duplicate webhook deliveries, and make sure a booking only ever got confirmed once the payment was independently verified \u2014 never from the frontend alone.',
+      },
+      solution: {
+        title: 'A booking flow that can\u2019t be faked or double-booked',
+        body: 'I built a reconciliation layer that treats the webhook as the single source of truth: a booking sits in a pending state until Chargily\u2019s server-to-server confirmation lands and its signature checks out, at which point the slot is locked and the client is notified. That closed the gap business owners cared most about \u2014 no more manually cross-checking WhatsApp messages against bank transfers to confirm a booking is real.',
+      },
+      screenshots: [
+        { src: '/screenshots/1/BookMe3.png', alt: 'BookMe booking flow' },
+        { src: '/screenshots/1/BookMe2.png', alt: 'BookMe business dashboard' },
+        { src: '/screenshots/1/BookMe1.png', alt: 'BookMe payment confirmation' },
+      ],
+      architecture: [
+        { src: '/architecture/1/DiagramBookMe.png', alt: 'BookMe system architecture diagram' },
+      ],
+    },
   },
 ]
 

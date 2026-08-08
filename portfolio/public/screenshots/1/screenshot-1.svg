@@ -1,0 +1,8 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#0E1017"/>
+  <rect x="0.5" y="0.5" width="1399" height="899" fill="none" stroke="rgba(255,255,255,0.08)"/>
+  <g fill="#A0A7B4" font-family="monospace" text-anchor="middle">
+    <text x="700" y="430" font-size="26" fill="#FFFFFF">screenshots/1/screenshot-1.jpg</text>
+    <text x="700" y="465" font-size="16">Replace with a real BookMe UI screenshot</text>
+  </g>
+</svg>
